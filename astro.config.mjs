@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
+import github from '@astrojs/github';
 
 export default defineConfig({
-  server: {
-    host: true,
-    port: 4321
-  }
+  output: 'static',
+  adapter: github(),
+  base: '/Portafolio/',
 });
